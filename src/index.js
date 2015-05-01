@@ -1,4 +1,7 @@
-module.exports = function fastSlice(array, offset) {
+module.exports = fastSlice;
+
+
+function fastSlice(array, offset) {
     var length, i, il, result, j;
 
     offset = offset || 0;
@@ -14,4 +17,4 @@ module.exports = function fastSlice(array, offset) {
     }
 
     return result;
-};
+}
