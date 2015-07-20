@@ -7,6 +7,12 @@
     "url": "https://github.com/nathanfaucett/fast_slice.git"
   },
   "main": "src/index.js",
+  "scripts": {
+    "test": "npm run test-node",
+    "test-node": "node ./test | ./node_modules/.bin/tap-spec",
+    "test-node-raw": "node ./test",
+    "test-browser-local": "zuul --local 8080 --ui tape -- ./test"
+  },
   "keywords": [
     "fast_slice",
     "fast_slice.js"
@@ -18,6 +24,8 @@
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-jsbeautifier": "^0.2.7",
-    "mocha": "^2.1.0"
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.1",
+    "zuul": "^3.2.0"
   }
 }
