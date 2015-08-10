@@ -27,5 +27,8 @@
     "tap-spec": "^4.0.2",
     "tape": "^4.0.1",
     "zuul": "^3.2.0"
+  },
+  "dependencies": {
+    "is_number": "git://github.com/nathanfaucett/is_number.git"
   }
 }
