@@ -3,6 +3,14 @@ var tape = require("tape"),
 
 
 tape("fastSlice(value: ArrayLike [, offset: Number]) should copy array with the given offset", function(assert) {
-    assert.deepEqual(fastSlice([0, 1, 2, 3], 1), [1, 2, 3]);
+    var array = [0, 1, 2];
+
+    assert.deepEqual(fastSlice(array), [0, 1, 2]);
+    assert.deepEqual(fastSlice(array, -1), [0, 1, 2]);
+    assert.deepEqual(fastSlice(array, 1), [1, 2]);
+    assert.deepEqual(fastSlice(array, 2), [2]);
+    assert.deepEqual(fastSlice(array, 3), []);
+    assert.deepEqual(fastSlice(array, 4), []);
+
     assert.end();
 });
