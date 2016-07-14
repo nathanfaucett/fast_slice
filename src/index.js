@@ -1,5 +1,5 @@
-var clamp = require("clamp"),
-    isNumber = require("is_number");
+var clamp = require("@nathanfaucett/clamp"),
+    isNumber = require("@nathanfaucett/is_number");
 
 
 module.exports = fastSlice;
